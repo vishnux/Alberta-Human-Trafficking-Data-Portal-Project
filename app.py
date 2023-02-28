@@ -42,7 +42,7 @@ import plotly.express as px
 data = pd.read_csv("trafficking_data.csv")
 
 # Set page title and layout
-st.set_page_config(page_title="Human Trafficking Dashboard")
+st.set_page_config(page_title="Human Trafficking Dashboard",layout="wide")
 
 # Title and description
 st.title("Trafficking in Persons Dashboard")
