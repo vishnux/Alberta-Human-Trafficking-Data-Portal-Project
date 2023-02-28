@@ -111,7 +111,7 @@ selected_option = st.sidebar.selectbox("Select an option", list(options.keys()))
 
 # Filter the data based on the selected option
 filtered_data = data[data["Statistics"] == options[selected_option]]
-
+st.write(filtered_data)
 # Create a chart
 chart_data = filtered_data[["REF_DATE", "VALUE"]]
 chart_data = chart_data.set_index("REF_DATE")
