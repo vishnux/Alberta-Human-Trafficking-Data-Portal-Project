@@ -115,7 +115,7 @@ st.write(filtered_data)
 # # Create a chart
 # chart_data = filtered_data[["REF_DATE", "VALUE"]]
 # chart_data = chart_data.set_index("REF_DATE")
-# chart_data.index = chart_data.index.astype(str)
+# chart_data.index = chart_data.index.astype(int)
 # chart = alt.Chart(chart_data).mark_bar().encode(
 #     x=alt.X("REF_DATE:T", title="Year"),
 #     y=alt.Y("VALUE", title=selected_option),
