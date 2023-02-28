@@ -2,12 +2,13 @@ import pandas as pd
 import altair as alt
 import streamlit as st
 
+# Set page title
+st.set_page_config(page_title="Trafficking in Persons Dashboard")
+
 # Load data
 data = pd.read_csv('trafficking_data.csv')
 
 st.write(data)
-# Set page title
-st.set_page_config(page_title="Trafficking in Persons Dashboard")
 
 # Add page title and subtitle
 st.title("Trafficking in Persons Dashboard")
