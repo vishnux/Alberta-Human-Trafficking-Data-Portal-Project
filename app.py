@@ -90,7 +90,7 @@ chart = (
         x=alt.X("REF_DATE", title="'000 stars on Github"),
         y=alt.Y(
             "VALUE",
-            sort=alt.EncodingSortField(field="stars", order="descending"),
+            sort=alt.EncodingSortField(field="Value", order="descending"),
             title="",
         ),
         color=alt.Color(
