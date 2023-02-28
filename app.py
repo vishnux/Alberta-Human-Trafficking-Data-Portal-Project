@@ -8,11 +8,12 @@ st.set_page_config(page_title="Trafficking in Persons Dashboard")
 # Load data
 data = pd.read_csv('trafficking_data.csv')
 
-st.write(data)
-
 # Add page title and subtitle
 st.title("Trafficking in Persons Dashboard")
 st.write("This dashboard provides an overview of trafficking in persons in Canada from 2017 to 2021.")
+
+# print raw data
+st.write(data)
 
 # # Create dropdown to select year
 # year = st.selectbox("Select a year:", options=data["Year"].unique())
