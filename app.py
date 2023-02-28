@@ -64,6 +64,8 @@ selected_option = st.sidebar.selectbox("Select an option", list(options.keys()))
 filtered_data = data[data["Statistics"] == options[selected_option]]
 filtered_data['REF_DATE'] = filtered_data.REF_DATE.astype(str)
 
+st.write("The increase in human trafficking is on the rise in Alberta and the fifth consecutive year of increase in incidents.")
+
 # Create a bar chart for selected option
 bar_fig = px.bar(filtered_data, x="REF_DATE", y="VALUE", title=selected_option)
 st.plotly_chart(bar_fig)
