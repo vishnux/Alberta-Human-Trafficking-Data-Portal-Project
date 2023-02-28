@@ -58,7 +58,7 @@ import streamlit as st
 import altair as alt
 
 # Load the data
-data = pd.read_csv("data.csv")
+data = pd.read_csv("trafficking_data.csv")
 
 # Create a dictionary for selecting options
 options = {
