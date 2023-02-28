@@ -80,29 +80,6 @@ trend_data = data.groupby(['Statistics', 'REF_DATE'], as_index=False)['VALUE'].s
 line_fig = px.line(trend_data, x="REF_DATE", y="VALUE", color='Statistics', title='Trend Analysis')
 st.plotly_chart(line_fig)
 
-chart = (
-    alt.Chart(
-        filtered_data,
-        title="Static site generators popularity",
-    )
-    .mark_bar()
-    .encode(
-        x=alt.X("REF_DATE", title="'000 stars on Github"),
-        y=alt.Y(
-            "VALUE",
-            sort=alt.EncodingSortField(field="Value", order="descending"),
-            title="",
-        ),
-        color=alt.Color(
-            "lang",
-            legend=alt.Legend(title="Language")
-        ),
-        tooltip=[],
-    )
-)
-
-
-st.altair_chart(chart, use_container_width=True)
 # Display the data table
 st.write(filtered_data)
 
