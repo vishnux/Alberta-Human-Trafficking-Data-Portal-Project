@@ -33,7 +33,7 @@ chart = alt.Chart(chart_data).mark_bar().encode(
  ).properties(width=700, height=400)
 
 # Display the chart and the data table
-#st.altair_chart(chart)
+st.altair_chart(chart)
 st.write(filtered_data)
 
 
