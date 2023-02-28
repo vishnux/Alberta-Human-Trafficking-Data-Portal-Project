@@ -31,4 +31,4 @@ fig = px.bar(filtered_data, x="REF_DATE", y="VALUE", title=selected_option)
 st.plotly_chart(fig)
 st.write(filtered_data)
 
-st.write("Data Source: Statistics Canada[Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701)")
+st.write("Data Source: Statistics Canada [Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701)")
