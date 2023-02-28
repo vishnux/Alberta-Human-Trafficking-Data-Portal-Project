@@ -32,7 +32,7 @@ chart_data.index = chart_data.index.astype(str)
 # ).properties(width=700, height=400)
 
 # Display the chart and the data table
-st.altair_chart(chart)
+#st.altair_chart(chart)
 st.write(filtered_data)
 
 
