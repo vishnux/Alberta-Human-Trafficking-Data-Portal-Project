@@ -50,7 +50,7 @@
 # # Data source
 # st.write("Data Source: Statistics Canada [Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701)")
 
-SECOND CHART
+#SECOND CHART
 
 import pandas as pd
 import streamlit as st
