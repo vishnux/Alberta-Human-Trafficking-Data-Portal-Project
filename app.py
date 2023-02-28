@@ -112,7 +112,7 @@ import streamlit as st
 import altair as alt
 
 # Load data
-data = pd.read_clipboard()
+data = pd.read_csv("trafficking_data.csv")
 
 # Clean data
 data = data[['REF_DATE', 'Statistics', 'VALUE']]
