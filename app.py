@@ -108,3 +108,20 @@ st.altair_chart(unfounded_chart, use_container_width=True)
 st.write('Human trafficking is a serious problem in Alberta, with hundreds of actual incidents reported each year. While the rate per 100,000 population has been increasing over the years, the percentage change in rate has been inconsistent. It is also concerning that a number of incidents are unfounded, indicating that there may be additional cases that are going unreported. It is important to continue to raise awareness about this issue and take action to prevent human trafficking in Alberta.')
 
 
+# Divide the screen into two columns
+col1, col2 = st.beta_columns(2)
+
+# Divide each column into two rows
+with col1:
+    st.subheader("Number of Trafficking Incidents")
+    st.bar_chart(data[data.Statistics == "Actual incidents"][["REF_DATE", "VALUE"]].set_index("REF_DATE"))
+
+    st.subheader("Number of Unfounded Incidents")
+    st.bar_chart(data[data.Statistics == "Unfounded incidents"][["REF_DATE", "VALUE"]].set_index("REF_DATE"))
+
+with col2:
+    st.subheader("Rate of Trafficking Incidents per 100,000 Population")
+    st.bar_chart(data[data.Statistics == "Rate per 100,000 population"][["REF_DATE", "VALUE"]].set_index("REF_DATE"))
+
+    st.subheader("Percentage Change in Rate of Trafficking Incidents")
+    st.bar_chart(data[data.Statistics == "Percentage change in rate"][["REF_DATE", "VALUE"]].set_index("REF_DATE"))
