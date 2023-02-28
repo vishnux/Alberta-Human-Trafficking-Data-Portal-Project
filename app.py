@@ -37,7 +37,7 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-
+import altair as alt
 # Load the data
 data = pd.read_csv("trafficking_data.csv")
 
