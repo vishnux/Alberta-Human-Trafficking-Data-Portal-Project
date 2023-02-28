@@ -46,7 +46,7 @@ st.set_page_config(page_title="Human Trafficking Dashboard",layout="wide")
 
 # Title and description
 #st.title("Trafficking in Persons Dashboard")
-st.markdown("<h1 style='text-align: center;'>Human Trafficking in Alberta Dashboard</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center;'>Human Trafficking in Alberta Dashboard</h1>", unsafe_allow_html=True)
 st.write('''Imagine a world where people are bought and sold as commodities, their bodies, and lives exploited for the profit and pleasure of others. It's a world that's hard to fathom, yet this is the reality for millions worldwide who are victims of human trafficking. Human trafficking is a horrendous crime that involves the exploitation of vulnerable individuals through deceitful tactics such as recruitment, transportation, transfer, harboring, or receipt through force, coercion, or deception. Women, children, and minority communities are particularly vulnerable and often targeted by human traffickers. These individuals are subjected to abuses like sexual exploitation, forced labor, or organ harvesting and are robbed of their fundamental human rights. But there's hope. Multiple organizations and initiatives work tirelessly to combat human trafficking and support its survivors. By advocating and supporting these efforts, we can make a difference and create a world where everyone is free to live their lives without fear of exploitation or abuse. Together, we can ensure that victims receive the support and care they need to heal and rebuild their lives. It's time for us to take action and speak out against this heinous crime. By raising awareness, supporting anti-trafficking organizations, and advocating for stronger laws and policies to combat human trafficking, we can create a world where the dignity and rights of all individuals are respected and protected. Let us work together to end human trafficking and create a brighter, safer future for everyone.
 ''')
 st.markdown('<div style="text-align: justify;">Imagine a world where people are bought and sold as commodities, their bodies, and lives exploited for the profit and pleasure of others. It's a world that's hard to fathom, yet this is the reality for millions worldwide who are victims of human trafficking.</div>', unsafe_allow_html=True)
@@ -80,10 +80,6 @@ trend_data = data.groupby(['Statistics', 'REF_DATE'], as_index=False)['VALUE'].s
 line_fig = px.line(trend_data, x="REF_DATE", y="VALUE", color='Statistics', title='Trend Analysis')
 st.plotly_chart(line_fig)
 
-# Create a heatmap for geographical analysis
-geo_data = data[data["Statistics"] == "Actual incidents"].pivot(index='REF_DATE', columns='GEO', values='VALUE').fillna(0)
-heatmap_fig = px.imshow(geo_data, x=geo_data.columns, y=geo_data.index, title='Geographical Analysis')
-st.plotly_chart(heatmap_fig)
 
 # Display the data table
 st.write(filtered_data)
