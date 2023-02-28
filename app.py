@@ -167,4 +167,3 @@ combined_chart = alt.vconcat(
 st.title('Extent of Human Trafficking in Alberta')
 st.altair_chart(combined_chart, use_container_width=True)
 st.write('Human trafficking is a serious problem in Alberta, with hundreds of actual incidents reported each year. While the rate per 100,000 population has been increasing over the years, the percentage change in rate has been inconsistent. It is also concerning that a number of incidents are unfounded, indicating that there may be additional cases that are going unreported. It is important to continue to raise awareness about this issue and take action to prevent human trafficking in Alberta.')
-
