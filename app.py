@@ -112,8 +112,22 @@ selected_option = st.sidebar.selectbox("Select an option", list(options.keys()))
 # Filter the data based on the selected option
 filtered_data = data[data["Statistics"] == options[selected_option]]
 st.write(filtered_data)
+# # Create a chart
+# chart_data = filtered_data[["REF_DATE", "VALUE"]]
+# chart_data = chart_data.set_index("REF_DATE")
+# chart_data.index = chart_data.index.astype(str)
+# chart = alt.Chart(chart_data).mark_bar().encode(
+#     x=alt.X("REF_DATE:T", title="Year"),
+#     y=alt.Y("VALUE", title=selected_option),
+#     tooltip=["REF_DATE", alt.Tooltip("VALUE", format=".2f")]
+# ).properties(width=700, height=400)
+
+# # Display the chart and the data table
+# st.altair_chart(chart)
+# st.write(filtered_data)
+
 # Create a chart
-chart_data = filtered_data[["REF_DATE", "VALUE"]]
+chart_data = data[["REF_DATE", "VALUE"]]
 chart_data = chart_data.set_index("REF_DATE")
 chart_data.index = chart_data.index.astype(str)
 chart = alt.Chart(chart_data).mark_bar().encode(
