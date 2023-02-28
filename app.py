@@ -76,7 +76,7 @@ selected_option = st.sidebar.selectbox("Select an option", list(options.keys()))
 filtered_data = data[data["Statistics"] == options[selected_option]]
 
 # Create a chart
- chart_data = filtered_data[["REF_DATE", "VALUE"]]
+chart_data = filtered_data[["REF_DATE", "VALUE"]]
 # chart_data = chart_data.set_index("REF_DATE")
 # chart_data.index = chart_data.index.astype(str)
 # chart = alt.Chart(chart_data).mark_bar().encode(
