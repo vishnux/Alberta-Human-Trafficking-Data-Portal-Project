@@ -39,7 +39,7 @@ st.write(chart_data)
 # #chart_data.index = pd.to_datetime(chart_data.index)
 chart = alt.Chart(chart_data).mark_bar().encode(
      x="REF_DATE",
-    y="VALUE").properties(width=700, height=400)
+    y="VALUE")
 
 # Display the chart and the data table
 st.altair_chart(chart)
