@@ -26,11 +26,11 @@ chart_data = chart_data.set_index("REF_DATE")
 chart_data.index = chart_data.index.astype(str)
 st.write(chart_data)
 # #chart_data.index = pd.to_datetime(chart_data.index)
-# chart = alt.Chart(chart_data).mark_bar().encode(
-#     x=alt.X("REF_DATE", title="Year"),
-#     y=alt.Y("VALUE", title=selected_option),
+chart = alt.Chart(chart_data).mark_bar().encode(
+     x=alt.X("REF_DATE", title="Year"),
+    y=alt.Y("VALUE", title=selected_option)
 #     tooltip=["REF_DATE", alt.Tooltip("VALUE", format=".2f")]
-# ).properties(width=700, height=400)
+ ).properties(width=700, height=400)
 
 # Display the chart and the data table
 #st.altair_chart(chart)
