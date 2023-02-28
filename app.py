@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-st.set_page_config(page_title="Trafficking in Persons Dashboard")
+st.set_page_config(page_title="Human Trafficking Dashboard")
 # Load the data
 data = pd.read_csv("trafficking_data.csv")
 
