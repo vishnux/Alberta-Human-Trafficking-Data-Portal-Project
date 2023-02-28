@@ -95,8 +95,7 @@ chart = (
         ),
         color=alt.Color(
             "lang",
-            legend=alt.Legend(title="Language"),
-            scale=get_github_scale(),
+            legend=alt.Legend(title="Language")
         ),
         tooltip=[],
     )
