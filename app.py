@@ -37,9 +37,8 @@ st.write(chart_data)
 # st.write(filtered_data)
 
 # #chart_data.index = pd.to_datetime(chart_data.index)
-chart = alt.Chart(chart_data).mark_bar().encode(
-     x="REF_DATE",
-    y="VALUE")
+chart = alt.Chart(chart_data).mark_circle().encode(
+     x="REF_DATE",y="VALUE")
 
 # Display the chart and the data table
 st.altair_chart(chart)
