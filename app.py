@@ -70,7 +70,7 @@ filtered_data = data[data["Statistics"] == options[selected_option]]
 filtered_data['REF_DATE'] = filtered_data.REF_DATE.astype(str)
 
 # Create a line chart
-fig = px.line(filtered_data, x="REF_DATE", y="VALUE", title=selected_option)
+fig = px.bar(filtered_data, x="REF_DATE", y="VALUE", title=selected_option)
 
 # Display the chart and the data table
 st.plotly_chart(fig)
