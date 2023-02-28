@@ -5,7 +5,7 @@ import streamlit as st
 # Load data
 data = pd.read_csv('trafficking_data.csv')
 
-print(data)
+st.write(data)
 # Set page title
 st.set_page_config(page_title="Trafficking in Persons Dashboard")
 
