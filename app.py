@@ -50,58 +50,133 @@
 # # Data source
 # st.write("Data Source: Statistics Canada [Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701)")
 
+#SECOND CHART
+
+# import pandas as pd
+# import streamlit as st
+# import altair as alt
+
+# # Load data
+# data = pd.read_csv("trafficking_data.csv")
+
+# # Clean data
+# data = data[['REF_DATE', 'Statistics', 'VALUE']]
+# data = data.pivot(index='REF_DATE', columns='Statistics', values='VALUE').reset_index()
+
+# # Create line chart for actual incidents
+# actual_chart = alt.Chart(data).mark_line().encode(
+#     x='REF_DATE',
+#     y='Actual incidents',
+# ).properties(
+#     title='Trend of actual incidents of trafficking in persons in Alberta from 2017 to 2021'
+# )
+
+# # Create line chart for rate per 100,000 population
+# rate_chart = alt.Chart(data).mark_line().encode(
+#     x='REF_DATE',
+#     y='Rate per 100,000 population'
+# ).properties(
+#     title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
+# )
+
+# # Create line chart for percentage change in rate
+# percent_chart = alt.Chart(data).mark_line().encode(
+#     x='REF_DATE',
+#     y='Percentage change in rate'
+# ).properties(
+#     title='Percentage change in rate of trafficking in persons in Alberta from 2017 to 2021'
+# )
+
+# # Create bar chart for unfounded incidents
+# unfounded_chart = alt.Chart(data).mark_bar().encode(
+#     x='REF_DATE',
+#     y='Unfounded incidents'
+# ).properties(
+#     title='Number of unfounded incidents of trafficking in persons in Alberta from 2017 to 2021'
+# )
+
+# # Display charts and additional information using Streamlit
+# st.title('Extent of Human Trafficking in Alberta')
+# st.subheader('Actual Incidents')
+# st.altair_chart(actual_chart, use_container_width=True)
+# st.subheader('Rate per 100,000 population')
+# st.altair_chart(rate_chart, use_container_width=True)
+# st.subheader('Percentage Change in Rate')
+# st.altair_chart(percent_chart, use_container_width=True)
+# st.subheader('Unfounded Incidents')
+# st.altair_chart(unfounded_chart, use_container_width=True)
+# st.write('Human trafficking is a serious problem in Alberta, with hundreds of actual incidents reported each year. While the rate per 100,000 population has been increasing over the years, the percentage change in rate has been inconsistent. It is also concerning that a number of incidents are unfounded, indicating that there may be additional cases that are going unreported. It is important to continue to raise awareness about this issue and take action to prevent human trafficking in Alberta.')
+
 import pandas as pd
 import streamlit as st
 import altair as alt
 
 # Load data
-data = pd.read_csv("trafficking_data.csv")
+data = pd.read_clipboard()
 
 # Clean data
 data = data[['REF_DATE', 'Statistics', 'VALUE']]
 data = data.pivot(index='REF_DATE', columns='Statistics', values='VALUE').reset_index()
 
-# Create line chart for actual incidents
-actual_chart = alt.Chart(data).mark_line().encode(
-    x='REF_DATE',
-    y='Actual incidents',
-).properties(
-    title='Trend of actual incidents of trafficking in persons in Alberta from 2017 to 2021'
+# Configure common chart settings
+chart_config = alt.Config(
+    axis=alt.Axis(grid=False),
+    view=alt.ViewConfig(strokeWidth=0)
 )
 
-# Create line chart for rate per 100,000 population
-rate_chart = alt.Chart(data).mark_line().encode(
-    x='REF_DATE',
-    y='Rate per 100,000 population'
+# Create line chart for actual incidents and rate per 100,000 population
+actual_rate_chart = alt.Chart(data).mark_line().encode(
+    x=alt.X('REF_DATE', axis=alt.Axis(format="%Y")),
+    y=alt.Y('Actual incidents', title='Actual incidents'),
+    color=alt.Color('Actual incidents', legend=None),
+    tooltip=['Actual incidents', 'Rate per 100,000 population']
 ).properties(
-    title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
+    title='Trend of actual incidents and rate per 100,000 population of trafficking in persons in Alberta from 2017 to 2021'
+).configure_view(
+    strokeWidth=0
+).configure_axis(
+    labelFontSize=12,
+    titleFontSize=14
+).configure_legend(
+    labelFontSize=12,
+    titleFontSize=14
+).configure_title(
+    fontSize=16
+).configure_mark(
+    strokeWidth=2
+).configure_view(
+    stroke=None
+).configure_title(
+    anchor='start'
 )
 
-# Create line chart for percentage change in rate
-percent_chart = alt.Chart(data).mark_line().encode(
-    x='REF_DATE',
-    y='Percentage change in rate'
+# Create line chart for percentage change in rate and bar chart for unfounded incidents
+percent_unfounded_chart = alt.Chart(data).mark_bar(opacity=0.7).encode(
+    x=alt.X('REF_DATE', axis=alt.Axis(format="%Y")),
+    y=alt.Y('Unfounded incidents', title='Unfounded incidents'),
+    color=alt.Color('Percentage change in rate', scale=alt.Scale(scheme='blues'), legend=None),
+    tooltip=['Unfounded incidents', 'Percentage change in rate']
 ).properties(
-    title='Percentage change in rate of trafficking in persons in Alberta from 2017 to 2021'
-)
-
-# Create bar chart for unfounded incidents
-unfounded_chart = alt.Chart(data).mark_bar().encode(
-    x='REF_DATE',
-    y='Unfounded incidents'
-).properties(
-    title='Number of unfounded incidents of trafficking in persons in Alberta from 2017 to 2021'
+    title='Number of unfounded incidents and percentage change in rate of trafficking in persons in Alberta from 2017 to 2021'
+).configure_view(
+    strokeWidth=0
+).configure_axis(
+    labelFontSize=12,
+    titleFontSize=14
+).configure_legend(
+    labelFontSize=12,
+    titleFontSize=14
+).configure_title(
+    fontSize=16
+).configure_mark(
+    strokeWidth=2
+).configure_view(
+    stroke=None
+).configure_title(
+    anchor='start'
 )
 
 # Display charts and additional information using Streamlit
 st.title('Extent of Human Trafficking in Alberta')
-st.subheader('Actual Incidents')
-st.altair_chart(actual_chart, use_container_width=True)
-st.subheader('Rate per 100,000 population')
-st.altair_chart(rate_chart, use_container_width=True)
-st.subheader('Percentage Change in Rate')
-st.altair_chart(percent_chart, use_container_width=True)
-st.subheader('Unfounded Incidents')
-st.altair_chart(unfounded_chart, use_container_width=True)
+st.altair_chart(actual_rate_chart & percent_unfounded_chart, use_container_width=True)
 st.write('Human trafficking is a serious problem in Alberta, with hundreds of actual incidents reported each year. While the rate per 100,000 population has been increasing over the years, the percentage change in rate has been inconsistent. It is also concerning that a number of incidents are unfounded, indicating that there may be additional cases that are going unreported. It is important to continue to raise awareness about this issue and take action to prevent human trafficking in Alberta.')
-
