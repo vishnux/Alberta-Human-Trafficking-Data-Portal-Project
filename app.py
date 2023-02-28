@@ -67,7 +67,7 @@ selected_option = st.sidebar.selectbox("Select an option", list(options.keys()))
 
 # Filter the data based on the selected option
 filtered_data = data[data["Statistics"] == options[selected_option]]
-filtered_data = filtered_data.REF_DATE.astype(str)
+filtered_data['REF_DATE'] = filtered_data.REF_DATE.astype(str)
 
 # Create a line chart
 fig = px.line(filtered_data, x="REF_DATE", y="VALUE", title=selected_option)
