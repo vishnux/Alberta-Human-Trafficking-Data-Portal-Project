@@ -73,7 +73,7 @@ with col1:
     # Add some vertical space between the graphs
     # Create line chart for actual incidents
     actual_chart = alt.Chart(data).mark_line().encode(
-        x=alt.X('REF_DATE:T', axis=alt.Axis(title='Year')),
+        x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
         y='Actual incidents',
     ).properties(
         title='Trend of actual incidents of trafficking in persons in Alberta from 2017 to 2021'
@@ -102,7 +102,7 @@ col1, col2,col3 = st.columns((1,0.1,1))#gap="large"
 with col1:    
     # Create line chart for percentage change in rate
     percent_chart = alt.Chart(data).mark_line().encode(
-        x=alt.X('REF_DATE:T', axis=alt.Axis(title='Year', format='%Y')),
+        x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
         y='Percentage change in rate'
     ).properties(
         title='Percentage change in rate of trafficking in persons in Alberta from 2017 to 2021'
@@ -116,7 +116,7 @@ with col2:
 with col3:    
     # Create bar chart for unfounded incidents
     unfounded_chart = alt.Chart(data).mark_bar().encode(
-        x=alt.X('REF_DATE:T', axis=alt.Axis(title='Year', format='%Y')),
+        x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
         y='Unfounded incidents'
     ).properties(
         title='Number of unfounded incidents of trafficking in persons in Alberta from 2017 to 2021'
