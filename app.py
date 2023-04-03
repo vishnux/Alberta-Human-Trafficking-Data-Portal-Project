@@ -63,37 +63,56 @@ data = pd.read_csv("trafficking_data.csv")
 data = data[['REF_DATE', 'Statistics', 'VALUE']]
 data = data.pivot(index='REF_DATE', columns='Statistics', values='VALUE').reset_index()
 
-# Create line chart for actual incidents
-actual_chart = alt.Chart(data).mark_line().encode(
-    x='REF_DATE',
-    y='Actual incidents',
-).properties(
-    title='Trend of actual incidents of trafficking in persons in Alberta from 2017 to 2021'
-)
+col1, col2,col3 = st.columns((0.5,1,0.5))#gap="large"
 
-# Create line chart for rate per 100,000 population
-rate_chart = alt.Chart(data).mark_line().encode(
-    x='REF_DATE',
-    y='Rate per 100,000 population'
-).properties(
-    title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
-)
+with col1:
+    # Add some vertical space between the graphs
+    # Create line chart for actual incidents
+    actual_chart = alt.Chart(data).mark_line().encode(
+        x='REF_DATE',
+        y='Actual incidents',
+    ).properties(
+        title='Trend of actual incidents of trafficking in persons in Alberta from 2017 to 2021'
+    )
 
-# Create line chart for percentage change in rate
-percent_chart = alt.Chart(data).mark_line().encode(
-    x='REF_DATE',
-    y='Percentage change in rate'
-).properties(
-    title='Percentage change in rate of trafficking in persons in Alberta from 2017 to 2021'
-)
 
-# Create bar chart for unfounded incidents
-unfounded_chart = alt.Chart(data).mark_bar().encode(
-    x='REF_DATE',
-    y='Unfounded incidents'
-).properties(
-    title='Number of unfounded incidents of trafficking in persons in Alberta from 2017 to 2021'
-)
+with col2:
+    # Add some vertical space between the graphs
+    st.write("")
+    
+with col3:
+
+    # Create line chart for rate per 100,000 population
+    rate_chart = alt.Chart(data).mark_line().encode(
+        x='REF_DATE',
+        y='Rate per 100,000 population'
+    ).properties(
+        title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
+    )
+
+col1, col2,col3 = st.columns((0.5,1,0.5))#gap="large"    
+   
+with col1:    
+    # Create line chart for percentage change in rate
+    percent_chart = alt.Chart(data).mark_line().encode(
+        x='REF_DATE',
+        y='Percentage change in rate'
+    ).properties(
+        title='Percentage change in rate of trafficking in persons in Alberta from 2017 to 2021'
+    )
+
+with col2:
+    # Add some vertical space between the graphs
+    st.write("")
+    
+with col3:    
+    # Create bar chart for unfounded incidents
+    unfounded_chart = alt.Chart(data).mark_bar().encode(
+        x='REF_DATE',
+        y='Unfounded incidents'
+    ).properties(
+        title='Number of unfounded incidents of trafficking in persons in Alberta from 2017 to 2021'
+    )
 
 # Display charts and additional information using Streamlit
 st.title('Extent of Human Trafficking in Alberta')
