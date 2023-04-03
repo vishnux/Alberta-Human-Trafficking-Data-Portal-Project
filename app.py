@@ -56,8 +56,6 @@ import streamlit as st
 import altair as alt
 st.set_page_config(page_title="Human Trafficking Dashboard",layout="wide")
 
-st.title('Extent of Human Trafficking in Alberta')
-st.set_page_config(layout="wide")
 st.title("")
 st.markdown("<h1 style='text-align: center;'>Alberta Human Trafficking Dashboard</h1>", unsafe_allow_html=True)
 # Load data
