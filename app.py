@@ -47,8 +47,7 @@
 # # Display the data table
 # st.write(filtered_data)
 
-# # Data source
-# st.write("Data Source: Statistics Canada [Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701)")
+
 
 #SECOND CHART
 
@@ -97,7 +96,7 @@ with col3:
     st.subheader('Rate per 100,000 population')
     st.altair_chart(rate_chart, use_container_width=True)
 
-col1, col2,col3 = st.columns((0.5,1,0.5))#gap="large"    
+col1, col2,col3 = st.columns((1,0.1,1))#gap="large"    
    
 with col1:    
     # Create line chart for percentage change in rate
@@ -127,3 +126,6 @@ with col3:
 
 
 st.write('Human trafficking is a serious problem in Alberta, with hundreds of actual incidents reported each year. While the rate per 100,000 population has been increasing over the years, the percentage change in rate has been inconsistent. It is also concerning that a number of incidents are unfounded, indicating that there may be additional cases that are going unreported. It is important to continue to raise awareness about this issue and take action to prevent human trafficking in Alberta.')
+
+# Data source
+st.write("Data Source: Statistics Canada [Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701)")
