@@ -48,7 +48,10 @@ with col3:
     # Create line chart for rate per 100,000 population
     rate_chart = alt.Chart(data).mark_line().encode(
         x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
-        y='Rate per 100,000 population'
+        y='Rate per 100,000 population',tooltip=[
+        alt.Tooltip('REF_DATE:N', title='Year'),
+        alt.Tooltip('Rate per 100,000 population', title='Rate per 100,000 population')
+    ]
     ).properties(
         title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
     )
@@ -61,7 +64,10 @@ with col1:
     # Create line chart for percentage change in rate
     percent_chart = alt.Chart(data).mark_line().encode(
         x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
-        y='Percentage change in rate'
+        y='Percentage change in rate',tooltip=[
+        alt.Tooltip('REF_DATE:N', title='Year'),
+        alt.Tooltip('Percentage change in rate', title='Percentage change in rate')
+    ]
     ).properties(
         title='Percentage change in rate of trafficking in persons in Alberta from 2017 to 2021'
     )
@@ -75,7 +81,10 @@ with col3:
     # Create bar chart for unfounded incidents
     unfounded_chart = alt.Chart(data).mark_bar(size=15).encode(
         x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
-        y='Unfounded incidents'
+        y='Unfounded incidents',tooltip=[
+        alt.Tooltip('REF_DATE:N', title='Year'),
+        alt.Tooltip('Unfounded incidents', title='Unfounded Incidents')
+    ]
     ).properties(
         title='Number of unfounded incidents of trafficking in persons in Alberta from 2017 to 2021'
     )
