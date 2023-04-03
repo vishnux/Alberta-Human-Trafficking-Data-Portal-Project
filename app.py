@@ -31,7 +31,7 @@ with col1:
         y='Actual incidents',
     tooltip=[
         alt.Tooltip('REF_DATE:N', title='Year'),
-        alt.Tooltip('Unfounded incidents', title='Unfounded Incidents')
+        alt.Tooltip('Actual incidents', title='Actual Incidents')
     ]
     ).properties(
         title='Trend of actual incidents of trafficking in persons in Alberta from 2017 to 2021'
