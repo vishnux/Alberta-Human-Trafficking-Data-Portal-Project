@@ -57,6 +57,9 @@ import altair as alt
 st.set_page_config(page_title="Human Trafficking Dashboard",layout="wide")
 
 st.title('Extent of Human Trafficking in Alberta')
+st.set_page_config(layout="wide")
+st.title("")
+st.markdown("<h1 style='text-align: center;'>Alberta Human Trafficking Dashboard</h1>", unsafe_allow_html=True)
 # Load data
 data = pd.read_csv("trafficking_data.csv")
 
@@ -128,4 +131,5 @@ with col3:
 st.write('Human trafficking is a serious problem in Alberta, with hundreds of actual incidents reported each year. While the rate per 100,000 population has been increasing over the years, the percentage change in rate has been inconsistent. It is also concerning that a number of incidents are unfounded, indicating that there may be additional cases that are going unreported. It is important to continue to raise awareness about this issue and take action to prevent human trafficking in Alberta.')
 
 # Data source
-st.write("Data Source: Statistics Canada [Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701)")
+with st.expander("Data Source"):
+    st.write("Data Source: Statistics Canada [Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701)")
