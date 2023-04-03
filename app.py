@@ -89,7 +89,7 @@ with col3:
 
     # Create line chart for rate per 100,000 population
     rate_chart = alt.Chart(data).mark_line().encode(
-        x=alt.X('REF_DATE:T', axis=alt.Axis(title='Year', format='%Y')),
+        x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year'), sort=None),
         y='Rate per 100,000 population'
     ).properties(
         title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
