@@ -115,7 +115,7 @@ with col2:
     
 with col3:    
     # Create bar chart for unfounded incidents
-    unfounded_chart = alt.Chart(data).mark_bar().encode(
+    unfounded_chart = alt.Chart(data).mark_bar(size=15).encode(
         x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
         y='Unfounded incidents'
     ).properties(
