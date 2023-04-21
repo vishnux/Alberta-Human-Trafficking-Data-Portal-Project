@@ -16,10 +16,10 @@ Human trafficking is a severe crime that involves the exploitation of individual
 
 The analysis will examine the following characteristics: 
 
-* actual incidents of human trafficking, 
-* the rate of human trafficking per 100,000 population, 
-* the percentage change in the rate of human trafficking
-* number of unfounded incidents reported
+* Actual incidents of Human Trafficking 
+* Rate of human trafficking per 100,000 population
+* Percentage change in the rate of Human Trafficking 
+* Number of unfounded incidents reported
 
 The study's focus on actual incidents of human trafficking provides an insight into the number of reported cases in Alberta during the given period. The rate of human trafficking per 100,000 population provides an understanding of the prevalence of this crime in Alberta. Moreover, the percentage change in the rate of human trafficking provides an understanding of the trends in human trafficking cases over the years, which can aid in policymaking and resource allocation. By understanding these factors, we hope to shed light on the extent of the human trafficking problem in Alberta and how it's changed over the years.
 
