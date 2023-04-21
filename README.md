@@ -1,6 +1,6 @@
 # Alberta Human Trafficking Data Portal Project
 
-##  Purpose and reasoning behind the project
+##  The Project's Purpose and Rationale
 
 Imagine a world where people are bought and sold as commodities, their bodies, and lives exploited for the profit and pleasure of others. It's a world that's hard to fathom, yet this is the reality for millions worldwide who are victims of human trafficking. Human trafficking is a horrendous crime that involves the exploitation of vulnerable individuals through deceitful tactics such as recruitment, transportation, transfer, harboring, or receipt through force, coercion, or deception. Women, children, and minority communities are particularly vulnerable and often targeted by human traffickers. These individuals are subjected to abuses like sexual exploitation, forced labor, or organ harvesting. 
 
