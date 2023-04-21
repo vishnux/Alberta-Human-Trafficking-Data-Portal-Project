@@ -17,7 +17,7 @@ Human trafficking is a severe crime that involves the exploitation of individual
 The analysis will examine the following characteristics: 
 
 * Actual incidents of Human Trafficking 
-* Rate of human trafficking per 100,000 population
+* Rate of Human Trafficking  per 100,000 population
 * Percentage change in the rate of Human Trafficking 
 * Number of unfounded incidents reported
 
