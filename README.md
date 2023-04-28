@@ -8,7 +8,8 @@
 But there's hope. Organizations and initiatives are working tirelessly to combat human trafficking and support its survivors. By supporting these efforts, we can make a difference and create a world where everyone is free to live their lives without fear of exploitation or abuse. Together, we can ensure that those who have been victimized by human trafficking receive the support and care they need to heal and rebuild their lives.
 
 It's time for us to take action and speak out against this heinous crime. By raising awareness, supporting anti-trafficking organizations, and advocating for stronger laws and policies to combat human trafficking, we can create a world where the dignity and rights of all individuals are respected and protected. Let us work together to end human trafficking once and for all, and create a brighter, safer future for everyone.
-</p>
+
+
 ##  Repository Details
 
 The following is a comprehensive analysis of Alberta's Human Trafficking records based on official data sources provided by Statistics Canada. The study primarily focuses on data from the last five years (2017-2021), as the quality of data for previous years is sparse and cannot be relied upon for accuracy. The study examines actual incidents of human trafficking, the rate of human trafficking per 100,000 population, percentage change in the rate of human trafficking, and the number of unfounded incidents reported during the given period.
@@ -26,5 +27,5 @@ The study's focus on actual incidents of human trafficking provides an insight i
 
 Overall, this study sheds light on the extent of the human trafficking problem in Alberta and can help inform policy and resource allocation decisions in combating this crime.
 
-
+</p>
 </div>
