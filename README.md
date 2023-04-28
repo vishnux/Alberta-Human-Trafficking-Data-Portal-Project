@@ -1,5 +1,3 @@
-<div style="text-align: center"> hello </div>
- 
 # Alberta Human Trafficking Data Portal Project
 
 ##  The Project's Purpose and Rationale
@@ -28,4 +26,3 @@ The study's focus on actual incidents of human trafficking provides an insight i
 Overall, this study sheds light on the extent of the human trafficking problem in Alberta and can help inform policy and resource allocation decisions in combating this crime.
 
 </p>
-</div>
