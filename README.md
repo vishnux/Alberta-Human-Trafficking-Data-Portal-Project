@@ -1,4 +1,4 @@
-<div style="text-align: right"> your-text-here 
+<div style="text-align: justify">
 
 # Alberta Human Trafficking Data Portal Project
 
