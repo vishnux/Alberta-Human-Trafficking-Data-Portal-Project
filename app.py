@@ -22,8 +22,7 @@ with col1:
     # Create line chart for actual incidents
     
     actual_chart = alt.Chart(data).mark_line().encode(
-               x=alt.X('REF_DATE:N', 
-               axis=alt.Axis(title='Year', labelAngle=0), sort=None),
+               x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
                y='Actual incidents',
                     tooltip=[
                         alt.Tooltip('REF_DATE:N', title='Year'),
@@ -46,10 +45,10 @@ with col3:
         y='Rate per 100,000 population',tooltip=[
         alt.Tooltip('REF_DATE:N', title='Year'),
         alt.Tooltip('Rate per 100,000 population', title='Rate per 100,000 population')
-    ]
-    ).properties(
-        title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
-    )
+        ]
+        ).properties(
+            title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
+        )
     st.subheader('Rate per 100,000 population')
     st.altair_chart(rate_chart, use_container_width=True)
 
@@ -58,7 +57,8 @@ col1, col2,col3 = st.columns((1,0.1,1))#gap="large"
 with col1:    
     # Create line chart for percentage change in rate
     percent_chart = alt.Chart(data).mark_line().encode(
-        x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
+        x=alt.X('REF_DATE:N', 
+                axis=alt.Axis(title='Year', labelAngle=0), sort=None),
         y='Percentage change in rate',tooltip=[
         alt.Tooltip('REF_DATE:N', title='Year'),
         alt.Tooltip('Percentage change in rate', title='Percentage change in rate')
