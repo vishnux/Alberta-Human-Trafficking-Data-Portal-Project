@@ -43,12 +43,12 @@ with col3:
     rate_chart = alt.Chart(data).mark_line().encode(
         x=alt.X('REF_DATE:N', axis=alt.Axis(title='Year', labelAngle=0), sort=None),
         y='Rate per 100,000 population',tooltip=[
-        alt.Tooltip('REF_DATE:N', title='Year'),
-        alt.Tooltip('Rate per 100,000 population', title='Rate per 100,000 population')
+            alt.Tooltip('REF_DATE:N', title='Year'),
+            alt.Tooltip('Rate per 100,000 population', title='Rate per 100,000 population')
         ]
-        ).properties(
-            title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
-        )
+            ).properties(
+                title='Trend of rate of trafficking in persons per 100,000 population in Alberta from 2017 to 2021'
+            )
     st.subheader('Rate per 100,000 population')
     st.altair_chart(rate_chart, use_container_width=True)
 
