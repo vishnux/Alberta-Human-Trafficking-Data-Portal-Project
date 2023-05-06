@@ -67,6 +67,7 @@ with col1:
     )
     st.subheader('Percentage Change in Rate')
     st.altair_chart(percent_chart, use_container_width=True)
+    
 with col2:
     # Add some vertical space between the graphs
     st.write("")
@@ -82,12 +83,8 @@ with col3:
     ).properties(
         title='Number of unfounded incidents of trafficking in persons in Alberta from 2017 to 2021'
     )
-
     st.subheader('Unfounded Incidents')
     st.altair_chart(unfounded_chart, use_container_width=True)
-
-
-
 
 # Data source
 with st.expander("Data Source"):
