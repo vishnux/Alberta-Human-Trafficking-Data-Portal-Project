@@ -32,8 +32,8 @@ with col1:
                ).properties(
                   title='Trend of actual incidents of trafficking in persons in Alberta from 2017 to 2021'
                )
-st.subheader('Actual Incidents')
-st.altair_chart(actual_chart, use_container_width=True)
+    st.subheader('Actual Incidents')
+    st.altair_chart(actual_chart, use_container_width=True)
 with col2:
     # Add some vertical space between the graphs
     st.write("")
