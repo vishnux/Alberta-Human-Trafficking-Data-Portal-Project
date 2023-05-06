@@ -21,7 +21,7 @@ with col1:
     # Add some vertical space between the graphs
     # Create line chart for actual incidents
     
-actual_chart = alt.Chart(data).mark_line().encode(
+    actual_chart = alt.Chart(data).mark_line().encode(
                x=alt.X('REF_DATE:N', 
                axis=alt.Axis(title='Year', labelAngle=0), sort=None),
                y='Actual incidents',
