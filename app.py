@@ -6,12 +6,6 @@ st.set_page_config(page_title="Human Trafficking Dashboard",layout="wide")
 st.title("")
 st.markdown("<h1 style='text-align: center;'>Alberta Human Trafficking Dashboard</h1>", unsafe_allow_html=True)
 
-st.write('''
-Human trafficking is an alarming issue in Alberta, with hundreds of reported incidents each year, and an increasing rate per 100,000 population that 
-has shown inconsistent percentage change over the years. Even more concerning is the fact that some incidents are being reported as unfounded, 
-which suggests that there could be many unreported cases. Urgent action is needed to raise awareness about this critical problem and prevent human 
-trafficking in Alberta.
-''')
 # Load data
 data = pd.read_csv("trafficking_data.csv")
 
