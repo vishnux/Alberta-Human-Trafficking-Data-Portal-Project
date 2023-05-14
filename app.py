@@ -90,7 +90,7 @@ with col3:
 
 # Key Takeaways
 with st.expander("Key Insights"):
-    st.write(" * The above figures portray the trend of the rate of human trafficking per 100,000 population. This insight combined with the actual incidents rate in Alberta shows that there is an increase in Human trafficking victims in Alberta.")        
+    st.write(" * The above figures portray the trend of the actual incidents in Alberta. This insight combined with the rate of human trafficking per 100,000 population shows that there is an increase in Human trafficking victims in Alberta.")        
     st.write(" * In human trafficking, “unfounded incidents” refer to reported human trafficking cases in which there is insufficient evidence to support the claims or claimed conduct does not comply with the legal definition of human trafficking. We see an increase in these cases but it is crucial to remember that fabricated occurrences shouldn’t diminish the importance of actual instances of human trafficking. Authorities and organizations must ensure that all reported cases are thoroughly investigated while also providing protection and assistance to any prospective victims. The urgent need to confront the widespread problem of human trafficking and help individuals who have actually been harmed should not be overshadowed by unfounded cases.")
 # Data source
 with st.expander("Data Source"):
