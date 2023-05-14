@@ -88,7 +88,9 @@ with col3:
     st.subheader('Unfounded Incidents')
     st.altair_chart(unfounded_chart, use_container_width=True)
 
-st.write("The above figures portray the trend of the rate of human trafficking per 100,000 population. This insight combined with the actual incidents rate in Alberta shows that there is an increase in Human trafficking victims in Alberta.")        
+# Key Takeaways
+with st.expander("Key Takeaways"):
+    st.write(" * The above figures portray the trend of the rate of human trafficking per 100,000 population. This insight combined with the actual incidents rate in Alberta shows that there is an increase in Human trafficking victims in Alberta.")        
     
 # Data source
 with st.expander("Data Source"):
