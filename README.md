@@ -32,6 +32,6 @@ The study's focus on actual incidents of human trafficking provides an insight i
 
 Overall, this study sheds light on the extent of the human trafficking problem in Alberta and can help inform policy and resource allocation decisions in combating this crime.
   
-The dashboard can be found here: [Al](https://albertahumantrafficking.streamlit.app/)
+The [Alberta Human Trafficking Dashboard](https://albertahumantrafficking.streamlit.app/) is powered using Streamlit, Python and Altair.
 
 </p>
