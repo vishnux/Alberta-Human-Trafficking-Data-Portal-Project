@@ -31,5 +31,7 @@ The analysis will examine the following characteristics:
 The study's focus on actual incidents of human trafficking provides an insight into the number of reported cases in Alberta during the given period. The rate of human trafficking per 100,000 population provides an understanding of the prevalence of this crime in Alberta. Moreover, the percentage change in the rate of human trafficking provides an understanding of the trends in human trafficking cases over the years, which can aid in policymaking and resource allocation. By understanding these factors, we hope to shed light on the extent of the human trafficking problem in Alberta and how it's changed over the years.
 
 Overall, this study sheds light on the extent of the human trafficking problem in Alberta and can help inform policy and resource allocation decisions in combating this crime.
+  
+The dashboard can be found here: [Al](https://albertahumantrafficking.streamlit.app/)
 
 </p>
