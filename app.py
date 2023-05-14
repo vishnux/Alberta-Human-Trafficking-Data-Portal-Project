@@ -52,7 +52,7 @@ with col3:
     st.subheader('Rate per 100,000 population')
     st.altair_chart(rate_chart, use_container_width=True)
 
-st.write("The above diagram portrays the trend of the rate of human trafficking per 100,000 population. This insight combined with the actual incidents rate in Alberta shows that there is an increase in Human trafficking victims in Alberta.")    
+st.write("The above figures portray the trend of the rate of human trafficking per 100,000 population. This insight combined with the actual incidents rate in Alberta shows that there is an increase in Human trafficking victims in Alberta.")    
     
 col1, col2,col3 = st.columns((1,0.1,1))#gap="large"    
    
