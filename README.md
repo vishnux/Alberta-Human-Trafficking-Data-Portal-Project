@@ -1,4 +1,4 @@
-# Alberta Human Trafficking Data Portal Project
+# [Alberta Human Trafficking Data Portal Project](https://albertahumantrafficking.streamlit.app/) 
 
 ##  The Project's Purpose and Rationale
 
