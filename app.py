@@ -15,7 +15,7 @@ data = data.pivot(index='REF_DATE', columns='Statistics', values='VALUE').reset_
 
 # Display charts and additional information using Streamlit
 
-st.markdown("<h2 style='text-align: center;'>This dashboard provides an overview of key performance indicators related to human trafficking in Alberta.</h2>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>This dashboard provides an overview of key performance indicators related to human trafficking in Alberta.</h3>", unsafe_allow_html=True)
 col1, col2,col3 = st.columns((1,0.1,1))#gap="large"
 
 with col1:
