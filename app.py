@@ -14,6 +14,7 @@ data = data[['REF_DATE', 'Statistics', 'VALUE']]
 data = data.pivot(index='REF_DATE', columns='Statistics', values='VALUE').reset_index()
 
 # Display charts and additional information using Streamlit
+st.markdown('This dashboard provides an overview of key performance indicators related to human trafficking in Alberta.')
 
 col1, col2,col3 = st.columns((1,0.1,1))#gap="large"
 
@@ -51,8 +52,6 @@ with col3:
             )
     st.subheader('Rate per 100,000 population')
     st.altair_chart(rate_chart, use_container_width=True)
-
-st.write("The above figures portray the trend of the rate of human trafficking per 100,000 population. This insight combined with the actual incidents rate in Alberta shows that there is an increase in Human trafficking victims in Alberta.")    
     
 col1, col2,col3 = st.columns((1,0.1,1))#gap="large"    
    
@@ -89,6 +88,8 @@ with col3:
     st.subheader('Unfounded Incidents')
     st.altair_chart(unfounded_chart, use_container_width=True)
 
+st.write("The above figures portray the trend of the rate of human trafficking per 100,000 population. This insight combined with the actual incidents rate in Alberta shows that there is an increase in Human trafficking victims in Alberta.")        
+    
 # Data source
 with st.expander("Data Source"):
     st.write("Statistics Canada [Table 35-10-0177-01  Incident-based crime statistics, by detailed violations, Canada, provinces, territories, Census Metropolitan Areas and Canadian Forces Military Police](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017701&pickMembers%5B0%5D=1.33&pickMembers%5B1%5D=2.58&cubeTimeFrame.startYear=2017&cubeTimeFrame.endYear=2021&referencePeriods=20170101%2C20210101)")
