@@ -1,4 +1,4 @@
-# [Alberta Human Trafficking Data Portal Project](https://vishnu-r-nair.medium.com/unveiling-hidden-realities-shedding-light-on-human-trafficking-in-alberta-76cbbe77e77e)
+# [Alberta Human Trafficking Data Portal Project](https://vishnu-r-nair.medium.com/unveiling-hidden-realities-shedding-light-on-human-trafficking-in-alberta-76cbbe77e77e) 
 
 ##  The Project's Purpose and Rationale
 
@@ -12,8 +12,6 @@ There is no consensus about the real magnitude of the issue but the fact that e
 Even the scope of this issue can make one feel demoralized, discouraged, and disheartened, but it's important to remember that every human trafficking victim is someone's family or friend, and like the rest of us, they have hopes and dreams, but because of the greed and cruelty of others, their lives have been destroyed.
 
 The pressing imperative remains and mandates that we, as a global community, must do everything to eliminate this crime. Millions of people caught in this cycle of exploitation can change their lives if we raise awareness, fund anti-trafficking organizations, and advocate for stricter laws and regulations.
-
-
 
 ##  Repository Details
 
