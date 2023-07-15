@@ -1,4 +1,4 @@
-# [Alberta Human Trafficking Data Portal Project](https://albertahumantrafficking.streamlit.app/) 
+# [Alberta Human Trafficking Data Portal Project](https://vishnu-r-nair.medium.com/unveiling-hidden-realities-shedding-light-on-human-trafficking-in-alberta-76cbbe77e77e)
 
 ##  The Project's Purpose and Rationale
 
@@ -17,7 +17,7 @@ The pressing imperative remains and mandates that we, as a global community, mus
 
 ##  Repository Details
 
-The following is a comprehensive analysis of Alberta's Human Trafficking records based on official data sources provided by Statistics Canada. The study primarily focuses on data from the last five years (2017-2021), as the quality of data for previous years is sparse and cannot be relied upon for accuracy. The study examines actual incidents of human trafficking, the rate of human trafficking per 100,000 population, percentage change in the rate of human trafficking, and the number of unfounded incidents reported during the given period.
+The following is a comprehensive analysis of Alberta's Human Trafficking records based on official data sources provided by Statistics Canada. The study primarily focuses on data from the last five years (2017-2021), as the quality of data for previous years is sparse and cannot be relied upon for accuracy. The study examines actual incidents of human trafficking, the rate of human trafficking per 100,000 population, the percentage change in the rate of human trafficking, and the number of unfounded incidents reported during the given period.
 
 Human trafficking is a severe crime that involves the exploitation of individuals through forced labor, sexual exploitation, or other forms of coercion. It is a significant concern for law enforcement agencies, policymakers, and advocacy groups worldwide.
 
